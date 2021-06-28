@@ -1,0 +1,340 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    float: center;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(233, 232, 232);
+}
+/*************************NAVIGATION BAR*************************/
+#navBarButtons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Oswald', sans-serif;
+}  
+
+#home {
+    float: left;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.navButton {
+    /* Over all format */
+    display: inline;
+    float: right;
+    display: block;
+
+    /* Alignment and size */
+    text-align: center;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 20 px;
+    font-size: 1.5em;
+
+    /* Style */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+#start:hover {
+    background-color: #3CB371;
+    font-family: 'Oswald', sans-serif;
+}
+.navButton:hover {
+    background-color: #111;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+/****************************INTRO FIRST DIV******************/
+#info {
+    margin-top: 10px;
+    background-image: url("./assets/images/background-intro.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 30em;
+
+    /*Aligining the text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#introText {
+    color: white;
+    font-size: 3em;
+    
+}
+/*******************STEPS*****************/
+.step {
+    font-size: 4em;
+    color: rgba(80, 207, 224, 0.753);
+    font-family: 'Chango', cursive;
+}
+.instructions {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*******************Giving credit******************/
+#background-credit {
+    float: right;
+    padding-right: 1em;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.spacer {
+    height: 3em;
+}
+
+#getStarted {
+    background-color: #3CB371;
+    color: black;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 5px 10px 10px black;
+
+    height: 2em;
+    width: 15em;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+
+#getStarted:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+/*************************Sign-in Form*************************/
+.logIn {
+    font-family: 'Oswald', sans-serif;
+}
+.signInTitle {
+    text-align: center;
+    color: rgba(80, 207, 224, 0.753);
+    font-family: 'Chango', cursive;
+    font-size: 2.5em;
+}
+
+/*Username and password labels*/
+.signInLables {
+    float: left; 
+    padding-left: 1em; 
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1em;
+    height: 15px;
+}
+
+.entryFields {
+    height: 30px;
+    border: 10px;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+    width: 90%;
+}
+
+/*Both Sign in and create account*/
+.signIn {
+    background-color: #49d689;
+    color: black;
+    border-radius: 1em;
+    border: none;
+
+    height: 2em;
+    width: 7em;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+.signIn:hover {
+    box-shadow: 2px 2px 12px black;
+    background-color: #3CB371;
+}
+
+.rememberMe {
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#createAccount {
+    background-color: rgba(80, 207, 224, 0.753);
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+
+    transition: all .2s ease-in-out;
+}
+
+#createAccount:hover {
+    box-shadow: 2px 2px 12px black;
+    background-color: rgba(60, 180, 196, 0.856);;
+}
+
+  /* Modal Content/Box */
+.modalContent {
+    
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 70%;
+    width: 30%;
+    margin: 5% auto 5% auto;
+}
+
+
+.formTitle {
+    text-align: center;
+}
+
+.form {
+    padding: 10px 20px 10px 5px;
+    width:100%;
+}
+
+
+  /* The Close Button */
+.closeOut {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.closeOut:hover,
+.closeOut:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*************************FILE CHOOSER*************************/
+.file-chooser {
+    display: inline-block;
+    justify-content: center;
+    transform: translate(0%, 20%);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: dashed 8px #b4c9cfd0;
+    font-size: 5em;
+    width: 40%;
+
+    font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+}
+
+.file-chooser:hover {
+    cursor: pointer;
+    background-color: #75959ed0;
+    box-shadow: 5px 10px 10px black;
+
+}
+
+#master {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.picker {
+    border-radius: 15px;
+    transform: translate(0, -50px);
+    width: auto;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-webkit-file-upload-button {
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald', sans-serif;
+    background: #3cb3727e;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+#attendance {
+    background-color: #3CB371;
+    color: black;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 5px 10px 10px black;
+
+    height: 2em;
+    width: 10em;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+
+    transition: all .2s ease-in-out;
+
+}
+
+#attendance:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+#missing {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#hr {
+    height: 10px;
+    background-color: black;
+    margin-top: 70px;
+}
+
+#missingHead {
+    font-size: 4em;
+    color: rgba(80, 207, 224, 0.753);
+    font-family: 'Chango', cursive;
+    margin-bottom: 20px;
+    
+}
+#missingPeople {
+    float: left;
+    margin-left: 1em;
+    transform: translate(0px, -20px);
+    font-size: 1em;
+}
